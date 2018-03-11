@@ -105,7 +105,6 @@ class Nimiq_Miner_Public {
 		$localize = array(
 		    'nim_address' => get_option('nim_address'),
 		    'nim_thread_percent' => get_option('nim_thread_percent'),
-		    'nim_display_disclaimer' => get_option('nim_display_disclaimer'),
 		    'nim_disclaimer_bg' => get_option('nim_disclaimer_bg'),
 		    'nim_disclaimer_text_color' => get_option('nim_disclaimer_text_color'),
 		    'nim_disclaimer_text' => get_option('nim_disclaimer_text')

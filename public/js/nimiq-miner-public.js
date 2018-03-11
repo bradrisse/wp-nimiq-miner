@@ -103,8 +103,6 @@ jQuery(document).ready(function() {
         });
     }
 
-    if (php_vars.nim_display_disclaimer) {
-        showNotificationBar(php_vars.nim_disclaimer_text, 15000, php_vars.nim_disclaimer_bg, php_vars.nim_disclaimer_text_color);
-    }
+    showNotificationBar(php_vars.nim_disclaimer_text, 15000, php_vars.nim_disclaimer_bg, php_vars.nim_disclaimer_text_color);
 
 })

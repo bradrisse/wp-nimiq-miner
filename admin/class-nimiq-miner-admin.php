@@ -201,9 +201,6 @@ function nimiq_miner_options_page()
     	add_settings_field("nim_thread_percent", "Thread Percent", "display_nim_thread_percent_form_element", "nimiq-miner", "general_settings_section");
     	register_setting("general_settings_section", "nim_thread_percent");
 
-    	add_settings_field("nim_display_disclaimer", "Display Mining Disclaimer", "display_nim_display_disclaimer_form_element", "nimiq-miner", "general_settings_section");
-    	register_setting("general_settings_section", "nim_display_disclaimer");
-
         add_settings_field("nim_disclaimer_bg", "Disclaimer Background", "display_nim_disclaimer_bg_form_element", "nimiq-miner", "general_settings_section");
         register_setting("general_settings_section", "nim_disclaimer_bg");
 
@@ -240,14 +237,6 @@ function nimiq_miner_options_page()
                         <option value="50" <?php echo esc_attr( get_option('nim_thread_percent') ) == '50' ? 'selected="selected"' : ''; ?>>50</option>
                     </select><br>
                     <span>The percentage of threads of the visitors CPU that will mine. The larger the percent, the more reward, but will also slow down visitors computer.</span>
-        <?php
-    }
-
-    function display_nim_display_disclaimer_form_element() {
-        ?>
-            <input type="checkbox" name="nim_display_disclaimer" <?php echo esc_attr( get_option('nim_display_disclaimer') ) == 'on' ? 'checked="checked"' : ''; ?> />Yes, Display disclaimer
-                    </label><br/>
-                    <span>You should only turn the disclaimer off if you are displaying another way. Using visitors CPU without permission is NOT cool.</span>
         <?php
     }
 
